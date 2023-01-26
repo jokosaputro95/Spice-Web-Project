@@ -1,0 +1,71 @@
+$width: 1200;
+$column: 12;
+
+.container {
+  max-width: $width * 1;
+  width: 90%;
+  margin: 0 auto;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.d-flex {
+  display: flex;
+}
+
+.ai-center {
+  align-items: center;
+}
+
+.jc-sb {
+  justify-content: space-between;
+}
+
+.d-none {
+  display: none;
+}
+
+
+
+
+@for $i from 1 through $column {
+  .col#{$i} {
+    width: calc((100%/($column/$i))) - 3%;
+    margin: 1.5%;
+  }
+}
+
+@media screen and (max-width:920px) {
+  @for $i from 1 through $column {
+    .col#{$i}-tablet {
+      width: calc((100%/($column/$i))) - 3%;
+      margin: 1.5%;
+    }
+  }
+
+  // .tablet-reverse{
+  //   flex-direction: column-reverse;
+  // }
+}
+
+@media screen and (max-width:520px) {
+  @for $i from 1 through $column {
+    .col#{$i} {
+      width: 100%
+    }
+  }
+
+  @for $i from 1 through $column {
+    .col#{$i}-mobile {
+      width: calc((100%/($column/$i))) - 3%;
+      margin: 1.5%;
+    }
+  }
+
+  // .mobile-reverse{
+  //   flex-direction: column-reverse;
+  // }
+}

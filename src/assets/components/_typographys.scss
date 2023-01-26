@@ -1,0 +1,37 @@
+$fontPoppins: 'Poppins', sans-serif;
+
+p {
+    font-size: 16px;
+    line-height: 180%;
+}
+
+@media screen and (max-width:350px) {
+    h5 {
+        font-size: 16px;
+        line-height: 180%;
+    }
+
+    // Golden Ratio Typography (GTR) Calculator
+    // faktor pengkali dari ukuran font tolerasinya mulai 1.2, 1.4, 1.6 maksimal 
+    h4 {
+        font-size: calc(19.2 * 1.1) * 1px; //maximal 1.6
+        line-height: 180%;
+    }
+
+    h3 {
+        font-size: calc(23.04 * 1.1) * 1px;
+        // font-size: calc((16 * 1.1) * 1.2) * 1px; //maximal 1.6 format 1
+        // font-size: calc(19.2 * 1.2) * 1px; //maximal 1.6 format 2 hasilnya sama kaya format 1
+        line-height: 180%;
+    }
+
+    h2 {
+        font-size: calc(27.65 * 1.1) * 1px; //maximal 1.6
+        line-height: 120%;
+    }
+
+    h1 {
+        font-size: calc(33.18 * 1.1) * 1px; //maximal 1.6
+        line-height: 120%;
+    }
+}
