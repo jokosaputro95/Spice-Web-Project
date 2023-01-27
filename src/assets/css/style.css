@@ -444,6 +444,10 @@ p {
   width: 100%;
 }
 
+.icon20 {
+  width: 20px;
+}
+
 .icon32 {
   width: 32px;
 }
@@ -456,11 +460,20 @@ p {
   width: 128px;
 }
 
-#header {
+#header,
+footer {
   background-color: #48BB78;
   color: white;
 }
 
+.header p a {
+  text-decoration: none;
+  color: white;
+}
+
+.head img {
+  margin-right: 10px;
+}
 .head p {
   padding: 5px 0;
   margin-right: 20px;
@@ -490,4 +503,15 @@ p {
 .big-title {
   font-size: 3.6em;
   font-weight: 600;
+}
+
+.footer p {
+  font-size: 14px;
+}
+.footer p a {
+  text-decoration: none;
+  color: white;
+}
+.footer img {
+  margin-right: 10px;
 }/*# sourceMappingURL=style.css.map */
