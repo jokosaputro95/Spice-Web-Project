@@ -433,7 +433,7 @@ p {
 }
 
 .spacerFirst {
-  padding: 5% 0;
+  padding: 3% 0;
 }
 
 .spacerSection {
@@ -476,4 +476,14 @@ p {
 .nav .menu li a {
   color: black;
   text-decoration: none;
+}
+
+.img-hero {
+  width: 580px;
+  height: 555px;
+}
+
+.big-title {
+  font-size: 3.6em;
+  font-weight: 600;
 }/*# sourceMappingURL=style.css.map */
